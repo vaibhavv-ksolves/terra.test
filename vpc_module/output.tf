@@ -176,7 +176,7 @@ output "private_subnet_objects" {
 
 output "private_subnets" {
   description = "List of IDs of private subnets"
-  value       = try(aws_subnet.private[*].id, [])
+  value       = try(aws_subnet.private[*].id, []) # Changed to output IDs
 }
 
 output "private_subnet_arns" {
@@ -222,45 +222,6 @@ output "private_network_acl_id" {
 output "private_network_acl_arn" {
   description = "ARN of the private network ACL"
   value       = try(aws_network_acl.private[0].arn, null)
-}
-
-################################################################################
-# Outpost Subnets
-################################################################################
-
-output "outpost_subnet_objects" {
-  description = "A list of all outpost subnets, containing the full objects."
-  value       = try(aws_subnet.outpost, [])
-}
-
-output "outpost_subnets" {
-  description = "List of IDs of outpost subnets"
-  value       = try(aws_subnet.outpost[*].id, [])
-}
-
-output "outpost_subnet_arns" {
-  description = "List of ARNs of outpost subnets"
-  value       = try(aws_subnet.outpost[*].arn, [])
-}
-
-output "outpost_subnets_cidr_blocks" {
-  description = "List of cidr_blocks of outpost subnets"
-  value       = compact(try(aws_subnet.outpost[*].cidr_block, []))
-}
-
-output "outpost_subnets_ipv6_cidr_blocks" {
-  description = "List of IPv6 cidr_blocks of outpost subnets in an IPv6 enabled VPC"
-  value       = compact(try(aws_subnet.outpost[*].ipv6_cidr_block, []))
-}
-
-output "outpost_network_acl_id" {
-  description = "ID of the outpost network ACL"
-  value       = try(aws_network_acl.outpost[0].id, null)
-}
-
-output "outpost_network_acl_arn" {
-  description = "ARN of the outpost network ACL"
-  value       = try(aws_network_acl.outpost[0].arn, null)
 }
 
 ################################################################################
@@ -658,18 +619,18 @@ output "create_flow_log_cloudwatch_iam_role" {
 # If you ABSOLUTELY need the flow log ID, do this:
 # (But strongly consider if you REALLY need it)
 # output "vpc_flow_log_id" {
-#   description = "The ID of the Flow Log resource (if enabled)"
-#   value       = var.enable_flow_log ? try(aws_flow_log.this[0].id, null) : null
+#   description = "The ID of the Flow Log resource (if enabled)"
+#   value       = var.enable_flow_log ? try(aws_flow_log.this[0].id, null) : null
 # }
 
 # output "vpc_flow_log_cloudwatch_iam_role_arn" {
-#   description = "The ARN of the IAM role used when pushing logs to Cloudwatch log group (if applicable)"
-#   value       = var.enable_flow_log && var.create_flow_log_cloudwatch_iam_role ? try(aws_iam_role.this[0].arn, null) : null
+#   description = "The ARN of the IAM role used when pushing logs to Cloudwatch log group (if applicable)"
+#   value       = var.enable_flow_log && var.create_flow_log_cloudwatch_iam_role ? try(aws_iam_role.this[0].arn, null) : null
 # }
 
 # output "vpc_flow_log_deliver_cross_account_role" {
-#   description = "The ARN of the IAM role used when pushing logs cross account (if applicable)"
-#   value       = var.enable_flow_log ? try(aws_flow_log.this[0].deliver_cross_account_role, null) : null
+#   description = "The ARN of the IAM role used when pushing logs cross account (if applicable)"
+#   value       = var.enable_flow_log ? try(aws_flow_log.this[0].deliver_cross_account_role, null) : null
 # }
 
 ################################################################################
