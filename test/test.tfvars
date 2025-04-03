@@ -1,7 +1,8 @@
 aws_region = "ap-south-1"
+
 vpc_name = "comprehensive-test-vpc"
 vpc_cidr = "10.10.0.0/16"
-vpc_azs = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
+azs = ["ap-south-1a", "ap-south-1b", "ap-south-1c"]
 
 public_subnets = ["10.10.1.0/24", "10.10.2.0/24", "10.10.3.0/24"]
 private_subnets = ["10.10.11.0/24", "10.10.12.0/24", "10.10.13.0/24"]
@@ -52,4 +53,12 @@ create_flow_log_cloudwatch_iam_role = true
 
 tags = {
   Environment = "ComprehensiveTest"
+}
+
+eks_environment = "comprehensive-test"
+eks_cluster_name = "comprehensive-test-eks"
+eks_enable_flow_log = false # Or true, as needed
+eks_flow_log_destination_type = "cloud-watch-logs"
+eks_tags = {
+  Name = "comprehensive-test-eks"
 }
