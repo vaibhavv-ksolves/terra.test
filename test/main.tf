@@ -6,35 +6,17 @@ terraform {
     }
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "~> 2.0" # Or a suitable version
+      version = "~> 2.0"
     }
     helm = {
       source  = "hashicorp/helm"
-      version = "~> 2.0" # Or a suitable version
+      version = "~> 2.0"
     }
   }
 }
 
 provider "aws" {
   region = var.aws_region
-}
-
-provider "kubernetes" {
-  host                  = module.eks.cluster_endpoint
-  cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
-  token                 = data.aws_eks_auth.this.token
-}
-
-provider "helm" {
-  kubernetes {
-    host                  = module.eks.cluster_endpoint
-    cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
-    token                 = data.aws_eks_auth.this.token
-  }
-}
-
-data "aws_eks_auth" "this" {
-  name = module.eks.cluster_name
 }
 
 # -----------------------------------------------------------------------------
@@ -103,20 +85,12 @@ module "vpc" {
 # -----------------------------------------------------------------------------
 
 module "eks" {
-  source = "../eks_module"
-
-  environment = var.eks_environment
-  vpc_id      = module.vpc.vpc_id
+  source       = "../eks_module"
   cluster_name = var.eks_cluster_name
-  subnet_ids  = module.vpc.private_subnets
+  vpc_id       = module.vpc.vpc_id
+  subnet_ids   = module.vpc.private_subnets # Use private subnets from the VPC module
 
-  enable_flow_log = var.eks_enable_flow_log
-  flow_log_destination_type = var.eks_flow_log_destination_type
-
-  tags = merge(
-    var.tags,
-    var.eks_tags,
-  )
+  tags = merge(var.tags, var.eks_tags)
 }
 
 # -----------------------------------------------------------------------------
