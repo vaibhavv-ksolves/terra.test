@@ -57,8 +57,13 @@ tags = {
 
 eks_environment = "comprehensive-test"
 eks_cluster_name = "comprehensive-test-eks"
-eks_enable_flow_log = false # Or true, as needed
+eks_enable_flow_log = false
 eks_flow_log_destination_type = "cloud-watch-logs"
 eks_tags = {
   Name = "comprehensive-test-eks"
 }
+
+eks_instance_type = "t3.medium"
+eks_desired_capacity = 2
+eks_min_size = 1
+eks_max_size = 3
