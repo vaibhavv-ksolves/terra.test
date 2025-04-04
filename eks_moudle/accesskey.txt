@@ -1,0 +1,8 @@
+7vHOkOpDhAMw2cf04QEdwmyIWkW7XUdMBU8JyEvE8vDiNa32c73HJQQJ99BDACAAAAAXSjqwAAASAZDO2jim
+vvardhiya
+git clone https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-aws-root/_git/terraform-aws-root
+
+
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-aws-vpc/_git/terraform-aws-vpc
+vvardhiya
+4cRXJnRjneMdD0dNwuGOVmCXji2zoB3xZZN9gYB0BO1j4rIKHXs1JQQJ99BDACAAAAAXSjqwAAASAZDO2kkY
