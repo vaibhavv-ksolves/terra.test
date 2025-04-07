@@ -1,3 +1,4 @@
+###
 7vHOkOpDhAMw2cf04QEdwmyIWkW7XUdMBU8JyEvE8vDiNa32c73HJQQJ99BDACAAAAAXSjqwAAASAZDO2jim
 vvardhiya
 git clone https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-aws-root/_git/terraform-aws-root
@@ -6,3 +7,19 @@ git clone https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-aws-root/_git/
 https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-aws-vpc/_git/terraform-aws-vpc
 vvardhiya
 4cRXJnRjneMdD0dNwuGOVmCXji2zoB3xZZN9gYB0BO1j4rIKHXs1JQQJ99BDACAAAAAXSjqwAAASAZDO2kkY
+###
+
+terraform-modules(root directory)
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-modules
+vvardhiya
+CTpKDsk5F4RL0OoYoaPWRyfdmXYQ4e0KDHHMEaP6qyb2Nf7UNXGDJQQJ99BDACAAAAAXSjqwAAASAZDO3IZ2
+
+terraform-modules/vpc
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-vpc
+vvardhiya
+DOEQIWIm5OScQLrQYvHiCQf1XTxqPd5N0jrguuwWJL8Ei8eHZgPBJQQJ99BDACAAAAAXSjqwAAASAZDO2NM8
+
+terraform-modules/eks
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-eks
+vvardhiya
+1drJebaraxv8hPgtBqS6B5YWOnziBVNi9YQQkEeT1niZ38mcL44QJQQJ99BDACAAAAAXSjqwAAASAZDO4T4j
