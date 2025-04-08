@@ -24,6 +24,8 @@ https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-a
 vvardhiya
 1drJebaraxv8hPgtBqS6B5YWOnziBVNi9YQQkEeT1niZ38mcL44QJQQJ99BDACAAAAAXSjqwAAASAZDO4T4j
 
+Access key ID,Secret access key
+AKIAUQ4L3PFQOW D4IHBG,nT2kV6ZXpn0MixVaTbM2k gwYi7DAy8e9OBulVH7C
 
 
 
