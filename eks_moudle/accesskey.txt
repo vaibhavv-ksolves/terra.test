@@ -19,6 +19,11 @@ https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-a
 vvardhiya
 DOEQIWIm5OScQLrQYvHiCQf1XTxqPd5N0jrguuwWJL8Ei8eHZgPBJQQJ99BDACAAAAAXSjqwAAASAZDO2NM8
 
+2
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-vpc
+vvardhiya
+FyXc5EB1gEqiS7365mYxFXMiKxghLg8fzYpUiXRArxJon2YzqEzGJQQJ99BDACAAAAAXSjqwAAASAZDO3vwv
+
 terraform-modules/eks
 https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-eks
 vvardhiya
