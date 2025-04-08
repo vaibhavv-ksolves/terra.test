@@ -23,3 +23,9 @@ terraform-modules/eks
 https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-eks
 vvardhiya
 1drJebaraxv8hPgtBqS6B5YWOnziBVNi9YQQkEeT1niZ38mcL44QJQQJ99BDACAAAAAXSjqwAAASAZDO4T4j
+
+
+
+
+##IGN##
+https://docs.aws.amazon.com/eks/latest/userguide/security-iam-troubleshoot.html#security-iam-troubleshoot-cannot-view-nodes-or-workloads
