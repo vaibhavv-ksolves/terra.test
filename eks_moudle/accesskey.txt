@@ -129,3 +129,26 @@ Key: kubernetes.io/role/elb Value: 1
         "ec2:DescribeAvailabilityZones",
         "ec2:DescribeInstanceTopology",
         "ec2:DescribeSubnets"
+
+
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInstanceTopology",
+        "ec2:DescribeSubnets",
+        "elasticloadbalancing:DescribeLoadBalancers"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
