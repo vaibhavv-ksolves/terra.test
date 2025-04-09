@@ -112,3 +112,7 @@ aws eks create-access-entry --cluster-name lcf-prod-eks --principal-arn arn:aws:
     }
   ]
 }
+
+
+subnet-05dd3f2d2ccaf5b9c
+subnet-078747239c8590194
