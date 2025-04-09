@@ -119,3 +119,13 @@ subnet-078747239c8590194
 
 Key: kubernetes.io/cluster/<cluster-name> Value: shared
 Key: kubernetes.io/role/elb Value: 1
+
+
+
+        "ec2:DescribeInstances",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeInstanceTopology",
+        "ec2:DescribeSubnets"
