@@ -49,7 +49,7 @@ variable "tags" {
 }
 
 variable "allowed_ssh_cidrs" {
-  description = "List of allowed CIDR blocks for SSH access"
   type        = list(string)
+  description = "List of allowed CIDR blocks for SSH access"
   default     = []
 }
