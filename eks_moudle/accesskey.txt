@@ -1,3 +1,11 @@
-
+# Root directory
 https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-infra
 1pEoRHNCKC3pfwwfvYdHcf4KjaXBylvxZN4t3g5lss29yWDzKJ5VJQQJ99BDACAAAAAXSjqwAAASAZDO1O1C
+
+# EKS
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-eks
+82evah6VMnBUlc3crQeyQZzNHVrqrjgQnvMwCIejW1gmUAqgoZlzJQQJ99BDACAAAAAXSjqwAAASAZDO166p
+
+# VPC
+https://TheLCFGroup@dev.azure.com/TheLCFGroup/terraform-modules/_git/terraform-aws-vpc
+BAbKJBAjSN0o6fEQHIMBpHNH1g8BkxeLvc4kmMAppU6b0frNTUfVJQQJ99BDACAAAAAXSjqwAAASAZDO34zF
